@@ -9,7 +9,7 @@ const USER_DATA = {
   name: "Lovanshu Garg",
   title: "Full Stack & AI Engineer",
   bio: "I build intelligent, high-performance web applications that merge creativity with machine learning. With experience across full-stack development and AI systems, I love turning complex data into seamless user experiences.",
-  profilePicture: "https://media.licdn.com/dms/image/v2/D4D03AQGdSOZG6CFYRA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696827394398?e=1762992000&v=beta&t=Q_B1cJmyM3AjuUAP6QR-wmbdnakKVF25jQyNYFCzy9s",
+  profilePicture: "https://media.licdn.com/dms/image//D4D03AQGdSOZG6CFYRA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696827394398?e=1762992000&v=beta&t=Q_B1cJmyM3AjuUAP6QR-wmbdnakKVF25jQyNYFCzy9s",
   socials: {
     linkedin: "https://linkedin.com/in/lovgarg",
     github: "https://github.com/bharatsachya",
@@ -56,47 +56,29 @@ const USER_DATA = {
   ],
   projects: [
     {
-      title: "Stock Vision AI",
+      title: "I am your bot",
       description:
-        "A real-time stock market prediction platform leveraging RNN models and Yahoo Finance APIs, visualized through Streamlit dashboards.",
-      image: "https://drive.google.com/file/d/1uvp-ym00Ey8iRD2ErTX_Q0RLRAhvy5m5/view",
-      tags: ["TensorFlow", "Streamlit", "Yahoo API", "Python"],
-      liveUrl: "#",
-      repoUrl: "https://github.com/lovanshugarg/stock-prediction-app",
+        "An AI-Powered RAG ChatBot that can analyze your needs, no database required. Built with Numpy, python and core architecture.",
+      image: "img.png",
+      tags: ["LLM", "Numpy", "Pandas", "Python"],
+      liveUrl: "https://iamyourbot.streamlit.app/",
+      repoUrl: "https://github.com/bharatsachya/doc-image-analyzer.git",
     },
     {
-      title: "Iamyourbot",
+      title: "Stock Prediction App",
       description:
-        "A hackathon project that uses AI to convert hand-drawn wireframes into responsive React code — blending design intelligence with automation.",
-      image: "https://placehold.co/600x400/334155/fff?text=Design+Generator",
-      tags: ["Next.js", "AI", "OpenAI API", "Tailwind"],
+      "A real-time stock market prediction platform leveraging RNN models and Yahoo Finance APIs, visualized through Streamlit dashboards.",
+      image: "https://placehold.co/600x400/334155/fff?text=Stock+Predictor",
+      tags: ["Pytorch", "RNN", "FastAPI", "streamlit", "CNN"],
       liveUrl: "#",
-      repoUrl: "#",
-    },
-    {
-      title: "Smart PCB Design Assistant",
-      description:
-        "An AI chatbot integrated into PCB design software to guide engineers, optimize layouts, and reduce design time using ML pipelines.",
-      image: "https://placehold.co/600x400/475569/fff?text=PCB+AI+Assistant",
-      tags: ["Node.js", "Machine Learning", "React", "FastAPI"],
-      liveUrl: "#",
-      repoUrl: "#",
-    },
-    {
-      title: "AI-Powered Job Portal",
-      description:
-        "An intelligent job portal for government jobs featuring an AI-based recommendation system to improve candidate-job matching.",
-      image: "https://placehold.co/600x400/64748b/fff?text=Job+Portal+AI",
-      tags: ["Next.js", "Python", "MongoDB", "ML"],
-      liveUrl: "#",
-      repoUrl: "#",
+      repoUrl: "https://github.com/bharatsachya/WiseTrader.git",
     },
   ],
 };
 
 // HELPER COMPONENTS & ICONS
 
-const SkillIcon = ({ iconName, className }) => {
+const SkillIcon = ({ iconName, className }: { iconName: string; className?: string }) => {
   const SvgIcon = {
     react: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48 0a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>,
     nextjs: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>,
@@ -147,14 +129,14 @@ export default function PortfolioPage() {
     { id: 'contact', label: 'Contact', icon: <Mail className="h-4 w-4" /> },
   ];
 
-  const handleNavClick = (id) => {
+  const handleNavClick = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setActiveSection(id);
   };
   
   // Animation Variants
   const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
-  const itemVariants = { hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } } };
+  const itemVariants = { hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { type: "spring" as const, stiffness: 100 } } };
   const skillContainerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.08, delayChildren: 0.2 } } };
   const skillItemVariants = { hidden: { scale: 0.5, opacity: 0 }, visible: { scale: 1, opacity: 1, transition: { type: 'spring', damping: 15, stiffness: 400 } } };
   const projectCardVariants = { hidden: { opacity: 0, y: 50, rotateX: -15 }, visible: { opacity: 1, y: 0, rotateX: 0, transition: { type: 'spring', stiffness: 80, damping: 15 } } };
@@ -272,7 +254,7 @@ export default function PortfolioPage() {
               <h3 className="text-lg font-semibold text-yellow-600 dark:text-yellow-300 mb-6 uppercase tracking-wider">Projects</h3>
               <motion.div className="space-y-12" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }}>
                 {USER_DATA.projects.map((project, index) => (
-                  <motion.div key={index} className="group grid grid-cols-1 md:grid-cols-8 gap-4 items-start p-4 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800/50" variants={projectCardVariants} whileHover={{ scale: 1.02, y: -5, rotateX: 2 }} viewport={{ once: true, amount: 0.3 }}>
+                  <motion.div key={index} className="group grid grid-cols-1 md:grid-cols-8 gap-4 items-start p-4 rounded-lg transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800/50" whileHover={{ scale: 1.02, y: -5, rotateX: 2 }} viewport={{ once: true, amount: 0.3 }}>
                     <div className="md:col-span-3 rounded-lg overflow-hidden relative">
                       <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-md border-2 border-gray-200 dark:border-gray-700 group-hover:border-yellow-500 dark:group-hover:border-yellow-400 transition-colors duration-300" />
                     </div>
@@ -297,7 +279,7 @@ export default function PortfolioPage() {
                 <h3 className="text-lg font-semibold text-yellow-600 dark:text-yellow-300 mb-6 uppercase tracking-wider">Skills</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     {USER_DATA.skills.map(skill => (
-                        <motion.div key={skill.name} className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center gap-3 aspect-square" variants={skillItemVariants} whileHover={{ scale: 1.1, backgroundColor: theme === 'light' ? '#fef3c7' : '#f59e0b20', transition: { duration: 0.2 } }}>
+                        <motion.div key={skill.name} className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center gap-3 aspect-square" whileHover={{ scale: 1.1, backgroundColor: theme === 'light' ? '#fef3c7' : '#f59e0b20', transition: { duration: 0.2 } }}>
                             <SkillIcon iconName={skill.icon} className="w-10 h-10 text-yellow-600 dark:text-yellow-400" />
                             <span className="font-medium text-sm text-center">{skill.name}</span>
                         </motion.div>
