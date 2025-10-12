@@ -9,7 +9,7 @@ const USER_DATA = {
   name: "Lovanshu Garg",
   title: "Full Stack & AI Engineer",
   bio: "I build intelligent, high-performance web applications that merge creativity with machine learning. With experience across full-stack development and AI systems, I love turning complex data into seamless user experiences.",
-  profilePicture: "https://media.licdn.com/dms/image//D4D03AQGdSOZG6CFYRA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696827394398?e=1762992000&v=beta&t=Q_B1cJmyM3AjuUAP6QR-wmbdnakKVF25jQyNYFCzy9s",
+  profilePicture: "prfile.jpeg",
   socials: {
     linkedin: "https://linkedin.com/in/lovgarg",
     github: "https://github.com/bharatsachya",
