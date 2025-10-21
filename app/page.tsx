@@ -15,7 +15,7 @@ const USER_DATA = {
     github: "https://github.com/bharatsachya",
     twitter: "https://x.com/Bharatsachya",
   },
-  email: "lovanshu.garg@example.com",
+  email: "lovanshugarg22703@gmail.com",
   experience: [
     {
       title: "AI Engineer & Full Stack Developer",

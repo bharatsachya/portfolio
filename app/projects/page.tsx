@@ -7,13 +7,13 @@ export default function Projects() {
       title: "Stock Prediction App",
       description: "An AI-powered stock trend predictor using RNNs, Streamlit, and TensorFlow.",
       image: "/project1.png",
-      link: "https://github.com/lovanshugarg/stock-predictor",
+      link: "https://github.com/bharatsachya/wisetrader",
     },
     {
       title: "Responsive Design Generator",
       description: "Hackathon project that generates responsive web layouts from sketches.",
       image: "/project2.png",
-      link: "https://github.com/lovanshugarg/design-generator",
+      link: "https://github.com/bharatsachya/design-generator",
     },
   ];
 
