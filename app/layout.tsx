@@ -17,12 +17,12 @@ const plexMono = IBM_Plex_Mono({
 });
 
 const faviconSvg =
-  "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFD21E'/><text x='50' y='68' font-size='52' font-family='Arial Black' font-weight='900' text-anchor='middle' fill='%230E1116'>LG</text></svg>";
+  "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23FFB224'/><text x='50' y='68' font-size='52' font-family='Arial Black' font-weight='900' text-anchor='middle' fill='%230C0D10'>LG</text></svg>";
 
 export const metadata: Metadata = {
-  title: "Lovanshu Garg — Full-Stack & AI Engineer",
+  title: "Lovanshu Garg — Agentic AI Engineer",
   description:
-    "Lovanshu Garg builds web applications with machine learning inside — RAG pipelines, multi-agent systems, and the interfaces that make them usable.",
+    "Lovanshu Garg — Agentic AI Engineer. Multi-agent systems, RAG pipelines, and the production backends that keep them fast, observable, and honest.",
   icons: { icon: faviconSvg },
 };
 
