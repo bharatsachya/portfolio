@@ -1023,6 +1023,110 @@ export default function PortfolioPage() {
                   </div>
                 </div>
               </article>
+
+              <article className="proj reveal">
+                <div className="proj-fig">
+                  <svg
+                    className="fig-svg"
+                    viewBox="0 0 460 210"
+                    role="img"
+                    aria-label="Diagram: a message is extracted into a persona chunk written to a graph, GraphRAG traverses the 2nd-degree network, and a second LLM call generates a match reply"
+                  >
+                    <text x="4" y="14" fontSize="9" letterSpacing="2" fill="#8E939E">
+                      FIG. 05 — PERSONA GRAPHRAG
+                    </text>
+                    <text x="111" y="44" fontSize="7.5" letterSpacing="1" fill="#8E939E">
+                      CHUNKS DECAY, NEVER DELETED
+                    </text>
+
+                    <rect x="14" y="82" width="40" height="40" fill="#17191E" stroke="#EAE8E1" />
+                    <line x1="21" y1="94" x2="47" y2="94" stroke="#8E939E" />
+                    <line x1="21" y1="102" x2="43" y2="102" stroke="#8E939E" />
+                    <line x1="21" y1="110" x2="47" y2="110" stroke="#8E939E" />
+                    <text x="18" y="140" fontSize="8" letterSpacing="1.5" fill="#8E939E">
+                      YOU
+                    </text>
+
+                    <line x1="58" y1="102" x2="78" y2="102" stroke="#FFB224" strokeDasharray="4 4" />
+                    <path d="M78 102 l-7 -4 v8 z" fill="#FFB224" />
+
+                    <rect x="82" y="86" width="66" height="32" fill="#17191E" stroke="#FFB224" />
+                    <text x="90" y="106" fontSize="7.5" letterSpacing="0.5" fill="#EAE8E1">
+                      EXTRACT
+                    </text>
+                    <text x="93" y="140" fontSize="7.5" letterSpacing="1" fill="#8E939E">
+                      T=0.1
+                    </text>
+
+                    <line x1="150" y1="102" x2="172" y2="102" stroke="#5B8CFF" strokeDasharray="4 4" />
+                    <path d="M172 102 l-7 -4 v8 z" fill="#5B8CFF" />
+
+                    <rect x="176" y="64" width="108" height="86" fill="#17191E" stroke="#5B8CFF" />
+                    <circle cx="230" cy="80" r="7" fill="none" stroke="#EAE8E1" />
+                    <line x1="230" y1="87" x2="230" y2="104" stroke="#8E939E" />
+                    <line x1="227" y1="86" x2="207" y2="104" stroke="#8E939E" />
+                    <line x1="233" y1="86" x2="253" y2="104" stroke="#8E939E" strokeDasharray="2 3" />
+                    <rect x="200" y="104" width="14" height="14" fill="#FFB224" />
+                    <rect x="223" y="104" width="14" height="14" fill="#4ADE80" />
+                    <rect x="246" y="104" width="14" height="14" fill="none" stroke="#8E939E" strokeDasharray="2 2" />
+                    <text x="196" y="142" fontSize="7" letterSpacing="0.5" fill="#8E939E">
+                      PERSONA GRAPH
+                    </text>
+
+                    <line x1="286" y1="102" x2="308" y2="102" stroke="#FFB224" strokeDasharray="4 4" />
+                    <path d="M308 102 l-7 -4 v8 z" fill="#FFB224" />
+
+                    <rect x="312" y="86" width="66" height="32" fill="#17191E" stroke="#FFB224" />
+                    <text x="316" y="106" fontSize="7.5" letterSpacing="0.5" fill="#EAE8E1">
+                      GENERATE
+                    </text>
+                    <text x="323" y="140" fontSize="7.5" letterSpacing="1" fill="#8E939E">
+                      T=0.7
+                    </text>
+
+                    <line x1="380" y1="102" x2="402" y2="102" stroke="#4ADE80" strokeDasharray="4 4" />
+                    <path d="M402 102 l-7 -4 v8 z" fill="#4ADE80" />
+
+                    <rect x="406" y="82" width="44" height="40" fill="#17191E" stroke="#4ADE80" />
+                    <path d="M418 96 l4 4 8 -9" fill="none" stroke="#4ADE80" strokeWidth="2" />
+                    <text x="408" y="140" fontSize="7.5" letterSpacing="1" fill="#8E939E">
+                      MATCH
+                    </text>
+
+                    <text x="14" y="196" fontSize="8" letterSpacing="1.5" fill="#8E939E">
+                      2ND-DEGREE NETWORK ONLY · CONSENT-GATED
+                    </text>
+                    <text x="70" y="172" fontSize="8.5" letterSpacing="1.5" fill="#4ADE80">
+                      THE CONVERSATION IS THE PRODUCT
+                    </text>
+                  </svg>
+                </div>
+                <div className="proj-body">
+                  <h4>CalebX</h4>
+                  <p>
+                    A Telegram bot that builds a living persona from ordinary
+                    conversation — a local LLM extracts intent and sentiment
+                    into graph-native PersonaChunks, and GraphRAG traverses
+                    your 2nd-degree network to surface people, groups, and
+                    places that actually fit. No forms.
+                  </p>
+                  <div className="chips" style={{ marginTop: 0 }}>
+                    <span className="chip">TYPESCRIPT</span>
+                    <span className="chip">GRAPHRAG</span>
+                    <span className="chip">HELIXDB</span>
+                    <span className="chip">OLLAMA</span>
+                  </div>
+                  <div className="proj-links">
+                    <a
+                      href="https://github.com/bharatsachya/CalebX"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VIEW CODE
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>
