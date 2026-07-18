@@ -907,6 +907,122 @@ export default function PortfolioPage() {
                   </div>
                 </div>
               </article>
+
+              <article className="proj reveal">
+                <div className="proj-fig">
+                  <svg
+                    className="fig-svg"
+                    viewBox="0 0 460 210"
+                    role="img"
+                    aria-label="Diagram: an agent writes a quiz about its diff, a human answers and is graded live, and a pre-push git hook blocks the push until the review passes"
+                  >
+                    <text x="4" y="14" fontSize="9" letterSpacing="2" fill="#8E939E">
+                      FIG. 04 — QUIZ-GATED PUSH
+                    </text>
+
+                    <rect x="14" y="84" width="42" height="40" fill="#17191E" stroke="#EAE8E1" />
+                    <line x1="22" y1="98" x2="48" y2="98" stroke="#8E939E" />
+                    <line x1="22" y1="106" x2="44" y2="106" stroke="#8E939E" />
+                    <line x1="22" y1="114" x2="48" y2="114" stroke="#8E939E" />
+                    <text x="16" y="146" fontSize="8" letterSpacing="1.5" fill="#8E939E">
+                      AGENT
+                    </text>
+
+                    <line x1="56" y1="104" x2="84" y2="104" stroke="#FFB224" strokeDasharray="4 4" />
+                    <path d="M84 104 l-7 -4 v8 z" fill="#FFB224" />
+
+                    <rect x="90" y="88" width="60" height="32" fill="#17191E" stroke="#FFB224" />
+                    <text x="96" y="108" fontSize="8" letterSpacing="1" fill="#EAE8E1">
+                      QUIZ.JSON
+                    </text>
+                    <text x="90" y="146" fontSize="8" letterSpacing="1.5" fill="#8E939E">
+                      WRITES QUIZ
+                    </text>
+
+                    <line x1="150" y1="104" x2="178" y2="104" stroke="#5B8CFF" strokeDasharray="4 4" />
+                    <path d="M178 104 l-7 -4 v8 z" fill="#5B8CFF" />
+
+                    <rect x="184" y="64" width="96" height="78" fill="#17191E" stroke="#5B8CFF" />
+                    <text x="196" y="86" fontSize="9" fontWeight="600" fill="#EAE8E1">
+                      DIFF
+                    </text>
+                    <line x1="196" y1="98" x2="228" y2="98" stroke="#4ADE80" strokeWidth="2" />
+                    <line x1="196" y1="106" x2="216" y2="106" stroke="#8E939E" strokeWidth="2" />
+                    <rect x="196" y="116" width="72" height="18" fill="none" stroke="#8E939E" />
+                    <text x="200" y="128" fontSize="6.5" fill="#8E939E">
+                      Q: WHY THIS?
+                    </text>
+                    <text x="186" y="156" fontSize="8" letterSpacing="1.5" fill="#8E939E">
+                      HUMAN ANSWERS
+                    </text>
+
+                    <path
+                      d="M232 64 C 214 26 76 22 42 78"
+                      fill="none"
+                      stroke="#8E939E"
+                      strokeDasharray="3 5"
+                    />
+                    <path d="M42 78 l8 -3 -2 -8 z" fill="#8E939E" />
+                    <text x="110" y="44" fontSize="7.5" letterSpacing="1.5" fill="#8E939E">
+                      GRADED LIVE — NEVER AUTO-PASSED
+                    </text>
+
+                    <line x1="282" y1="104" x2="308" y2="104" stroke="#4ADE80" strokeDasharray="4 4" />
+                    <path d="M308 104 l-7 -4 v8 z" fill="#4ADE80" />
+
+                    <rect x="312" y="88" width="32" height="32" fill="none" stroke="#4ADE80" />
+                    <path d="M318 104 l4 4 8 -9" fill="none" stroke="#4ADE80" strokeWidth="2" />
+                    <text x="328" y="146" fontSize="8" letterSpacing="1" fill="#8E939E" textAnchor="middle">
+                      PASSED
+                    </text>
+
+                    <text x="368" y="92" fontSize="6.5" fill="#8E939E" textAnchor="middle">
+                      git push
+                    </text>
+                    <line x1="350" y1="104" x2="386" y2="104" stroke="#EAE8E1" />
+                    <path d="M386 104 l-7 -4 v8 z" fill="#EAE8E1" />
+
+                    <rect x="390" y="78" width="54" height="52" fill="#17191E" stroke="#EAE8E1" />
+                    <path d="M408 96 v-6 a6 6 0 0 1 12 0 v6" fill="none" stroke="#EAE8E1" />
+                    <rect x="406" y="96" width="18" height="14" fill="none" stroke="#EAE8E1" />
+                    <text x="417" y="146" fontSize="7" letterSpacing="1" fill="#8E939E" textAnchor="middle">
+                      PRE-PUSH HOOK
+                    </text>
+
+                    <text x="14" y="196" fontSize="8" letterSpacing="1.5" fill="#8E939E">
+                      CONTENT-ADDRESSED · NO SERVER AT PUSH TIME
+                    </text>
+                    <text x="288" y="172" fontSize="8.5" letterSpacing="1.5" fill="#4ADE80">
+                      UNREVIEWED PUSH → BLOCKED
+                    </text>
+                  </svg>
+                </div>
+                <div className="proj-body">
+                  <h4>quiz-axi</h4>
+                  <p>
+                    A git push gate for AI-authored diffs — after an agent
+                    finishes a change, it writes a short quiz about the diff,
+                    grades your answers live in the browser, and a Husky
+                    pre-push hook refuses to push anything that hasn&apos;t
+                    passed.
+                  </p>
+                  <div className="chips" style={{ marginTop: 0 }}>
+                    <span className="chip">NODE.JS</span>
+                    <span className="chip">CLI</span>
+                    <span className="chip">GIT HOOKS</span>
+                    <span className="chip">AGENTIC WORKFLOWS</span>
+                  </div>
+                  <div className="proj-links">
+                    <a
+                      href="https://github.com/bharatsachya/quiz-axi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      VIEW CODE
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>
